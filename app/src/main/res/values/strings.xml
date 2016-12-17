@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CrashData</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_heat_map">Crash Data</string>
+    <string name="deer">deer</string>
+    <string name="deer_url">https://www.google.com/</string>
+</resources>
