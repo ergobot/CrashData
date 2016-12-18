@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo.data.crashdata.QueryFilterActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/enablefiltercard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/colorPrimaryLight"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/cardheadermajorcause"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_event_seat_black_24dp"
+                    android:drawablePadding="15dp"
+                    android:gravity="fill_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Major Cause"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/cardheadermajorcause"
+                    android:background="?android:attr/dividerHorizontal" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchanimal"
+                android:layout_below="@+id/cardheadermajorcause"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="15dp"
+                android:checked="false"
+                android:text="Animal"
+                android:textOff=""
+                android:textOn=""
+                app:showText="true" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switchdistracted"
+                    android:layout_below="@+id/switchanimal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="15dp"
+                    android:checked="false"
+                    android:text="Distracted"
+                    android:textOff=""
+                    android:textOn=""
+                    app:showText="true" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/switchfollowedtooclose"
+                    android:layout_below="@+id/switchdistracted"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_margin="15dp"
+                    android:checked="false"
+                    android:text="Followed too close"
+                    android:textOff=""
+                    android:textOn=""
+                    app:showText="true" />
+
+
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/datefiltercard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enablefiltercard"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@color/colorPrimaryLight"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/cardheaderdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                    android:drawablePadding="15dp"
+                    android:gravity="fill_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Date"
+                    android:textColor="@color/colorPrimaryText" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/cardheaderdate"
+                    android:background="?android:attr/dividerHorizontal" />
+
+
+                <RelativeLayout
+                    android:id="@+id/startdatelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardheaderdate"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:id="@+id/startdatelabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Start Date"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/startdateinput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+
+                        android:text="None"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/enddatelayout"
+                    android:background="?android:attr/dividerHorizontal" />
+
+                <RelativeLayout
+                    android:id="@+id/enddatelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/startdatelayout"
+                    android:layout_margin="20dp">
+
+                    <TextView
+                        android:id="@+id/enddatelabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="End Date"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <TextView
+                        android:id="@+id/enddateinput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+
+                        android:text="None"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+            android:id="@+id/submit"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimaryLight"
+            android:text="Submit" />
+
+    </RelativeLayout>
+
+    </ScrollView>
+</FrameLayout>
