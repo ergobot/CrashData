@@ -1,8 +1,8 @@
 # Crash Data
 
 <p align="center">
-### Displays data from Iowa DOT on map.
-</br>
+<b>Displays data from Iowa DOT on map.</b>
+</br></br>
 <img src="/crashdata-1.png" width="300">
 <img src="/crashdata-2.png" width="300">
 <img src="/crashdata-3.png" width="300">
