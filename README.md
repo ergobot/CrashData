@@ -1,19 +1,16 @@
 # Crash Data
 ### Displays data from Iowa DOT on map.
 
-<p align="center">
-<b>Displays data from Iowa DOT on map.</b>
-</p>
 <div>
 Filter crash data by:
 </br>
+Date
 Major cause
 <ul>
 <li>Animal</li>
 <li>Distracted driving</li>
 <li>Followed too close</li>
 </ul>
-Date
 </br>
 </div>
 <p align="center">
