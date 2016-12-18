@@ -2,6 +2,8 @@
 
 <p align="center">
 <b>Displays data from Iowa DOT on map.</b>
+</p>
+<div>
 </br></br>
 
 Filter crash data by:
@@ -15,6 +17,8 @@ Major cause
 </br>
 Date
 </br></br>
+</div>
+<p align="center">
 <img src="/crashdata-1.png" width="300">
 <img src="/crashdata-2.png" width="300">
 <img src="/crashdata-3.png" width="300">
